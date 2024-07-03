@@ -165,7 +165,7 @@ const StyledSwiperSlide = styled(SwiperSlide)`
   cursor:pointer;
   img {
     max-width: 100%;
-    height: auto;
+    height: 350px;
     
   } 
   text-align: center;

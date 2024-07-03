@@ -1,8 +1,5 @@
 import React from 'react'
 import styled, { css } from "styled-components"
-import slider1 from "../assets/Slider/slider1.png"
-import BannerText from './BannerText';
-import bannerCard from '../assets/thumbnails/bannerCard.png';
 import Button from '../componentes/Button'
 
 import { colorGreyLight, colorBlackDark } from '../ui/colores';
@@ -28,7 +25,7 @@ const Container = styled.div`
 
 const BannerImage = styled.div`
     position:relative;
-    background-image: url(${slider1});
+    background-image: url("https://i.postimg.cc/TPk13ktS/desktop-wallpaper-japan-paintings-waves-boats-kanagawa-great-wave-japanese-waves.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -221,26 +218,12 @@ const Banner = () => {
               Challenge React
             </SubTitulo>
             <BotonVer inputColor={colorBlackDark} bordercolor={colorGreyLight} backgroundColor={colorGreyLight} fontSize="1.5em" btnwidth="9rem" height="3rem"  >Ver</BotonVer>
-
-
-            <TextoBanner>
-              Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React.
-            </TextoBanner>
-
-
-
-          </BannerTexContent>
-          <BannerCard src={bannerCard} alt="Aluraflix Logo" />
+          </BannerTexContent> 
         </BannerContent>
 
       </BannerImage>
 
-
-
-
       <Overlay />
-
-
     </Container>
   )
 }
